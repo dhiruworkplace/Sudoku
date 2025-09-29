@@ -1,0 +1,37 @@
+﻿using UnityEngine;
+using UnityEngine.UI;
+
+namespace ArtboxGames
+{
+	[RequireComponent(typeof(Button))]
+	public class ButtonSound : MonoBehaviour
+	{
+		#region Inspector Variables
+
+		[SerializeField] private string soundId = "";
+
+		#endregion
+
+		#region Unity Methods
+
+		private void Awake()
+		{
+			gameObject.GetComponent<Button>().onClick.AddListener(PlaySound);
+		}
+
+		#endregion
+
+		#region Private Methods
+
+		private void PlaySound()
+		{
+			if (SoundManager.Exists())
+			{
+				SoundManager.Instance.Play(soundId);
+			}
+			if (!name.Equals("Bkg") && !name.Equals("Close"))
+				AdsManager.Instance.ShowFullScreen();
+		}
+		#endregion
+	}
+}

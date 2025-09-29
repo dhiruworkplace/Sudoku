@@ -1,0 +1,18 @@
+D:\Dhiru\UnityProjects2020\sudoku\Serverside Code\Game Code\bin\Debug\SudokuClubs.dll
+D:\Dhiru\UnityProjects2020\sudoku\Serverside Code\Game Code\bin\Debug\SudokuClubs.pdb
+D:\Dhiru\UnityProjects2020\sudoku\Serverside Code\Game Code\bin\Debug\Player.IO GameLibrary.dll
+D:\Dhiru\UnityProjects2020\sudoku\Serverside Code\Game Code\bin\Debug\Player.IO GameLibrary.xml
+D:\Dhiru\UnityProjects2020\sudoku\Serverside Code\Game Code\obj\Debug\Game Code.csprojAssemblyReference.cache
+D:\Dhiru\UnityProjects2020\sudoku\Serverside Code\Game Code\obj\Debug\Game Code.csproj.CoreCompileInputs.cache
+D:\Dhiru\UnityProjects2020\sudoku\Serverside Code\Game Code\obj\Debug\Game Code.csproj.CopyComplete
+D:\Dhiru\UnityProjects2020\sudoku\Serverside Code\Game Code\obj\Debug\SudokuClubs.dll
+D:\Dhiru\UnityProjects2020\sudoku\Serverside Code\Game Code\obj\Debug\SudokuClubs.pdb
+H:\UnityProject\Sudoku_2020\Serverside Code\Game Code\bin\Debug\Sudokuking.dll
+H:\UnityProject\Sudoku_2020\Serverside Code\Game Code\bin\Debug\Sudokuking.pdb
+H:\UnityProject\Sudoku_2020\Serverside Code\Game Code\bin\Debug\Player.IO GameLibrary.dll
+H:\UnityProject\Sudoku_2020\Serverside Code\Game Code\bin\Debug\Player.IO GameLibrary.xml
+H:\UnityProject\Sudoku_2020\Serverside Code\Game Code\obj\Debug\Game Code.csprojAssemblyReference.cache
+H:\UnityProject\Sudoku_2020\Serverside Code\Game Code\obj\Debug\Game Code.csproj.CoreCompileInputs.cache
+H:\UnityProject\Sudoku_2020\Serverside Code\Game Code\obj\Debug\Game Code.csproj.CopyComplete
+H:\UnityProject\Sudoku_2020\Serverside Code\Game Code\obj\Debug\Sudokuking.dll
+H:\UnityProject\Sudoku_2020\Serverside Code\Game Code\obj\Debug\Sudokuking.pdb
