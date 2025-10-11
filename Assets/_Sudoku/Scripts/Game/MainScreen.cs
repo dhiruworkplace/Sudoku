@@ -7,11 +7,11 @@ namespace ArtboxGames
 	{
 		#region Inspector Variables
 
-		[Space]
+		//[Space]
 
-		[SerializeField] private GameObject	continueButton			= null;
-		[SerializeField] private Text		continueDifficultyText	= null;
-		[SerializeField] private Text		continueTimeText		= null;
+		//[SerializeField] private GameObject	continueButton			= null;
+		//[SerializeField] private Text		continueDifficultyText	= null;
+		//[SerializeField] private Text		continueTimeText		= null;
 
 		#endregion
 

@@ -228,13 +228,17 @@ namespace ArtboxGames
 				}
 			}
 
-            if (screenId == "game") {
-                AdsManager.Instance.HideBanner();
-            }
-            else if (screenId == "main") {
-                AdsManager.Instance.ShowBanner();
-            }
-        }
+			if (screenId == "game")
+			{
+                if (AdsManager.Instance != null)
+                    AdsManager.Instance.HideBanner();
+			}
+			else if (screenId == "main")
+			{
+				if (AdsManager.Instance != null)
+					AdsManager.Instance.ShowBanner();
+			}
+		}
 
 		private void ClearBackStack()
 		{

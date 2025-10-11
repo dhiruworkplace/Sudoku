@@ -25,7 +25,7 @@ namespace ArtboxGames
 
 		#region Inspector Variables
 
-		[SerializeField] private string				notEnoughPopupId	= "";
+		//[SerializeField] private string				notEnoughPopupId	= "";
 		[SerializeField] private List<CurrencyInfo>	currencyInfos		= null;
 
 		#endregion

@@ -52,6 +52,12 @@ namespace ArtboxGames
 		public void Show(string id)
 		{
 			Show(id, null, null);
+
+			if (id.Equals("setting_screen"))
+			{
+				if (AdsManager.Instance != null)
+					AdsManager.Instance.ShowInterstitial();
+			}
 		}
 
 		public void Show(string id, object[] inData)
@@ -131,9 +137,5 @@ namespace ArtboxGames
 		}
 
         #endregion
-
-        public void ShowInterstital() {
-            AdsManager.Instance.ShowFullScreen();
-        }
 	}
 }

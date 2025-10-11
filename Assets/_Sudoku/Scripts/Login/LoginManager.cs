@@ -46,32 +46,6 @@ namespace ArtboxGames
             SocialLogin.Instance.PlayAsGuest();
         }
 
-        public void LoginWithFacebook() {
-            LoadingPage.SetActive(true);
-            StartCoroutine(checkInternet((isConnected) => {
-                if (isConnected) {
-                    SocialLogin.Instance.LoginWithFacebook();
-                }
-                else {
-                    ShowMessage("No internet connection!");
-                }
-            }));
-        }
-
-        public void LoginWithGoogle() {
-            if (Application.platform == RuntimePlatform.WindowsEditor)
-                return;
-            LoadingPage.SetActive(true);
-            StartCoroutine(checkInternet((isConnected) => {
-                if (isConnected) {
-                    SocialLogin.Instance.OnSignIn();
-                }
-                else {
-                    ShowMessage("No internet connection!");
-                }
-            }));
-        }
-
         public void ShowMessage(string msg) {
             LoadingPage.SetActive(false);
             PopupManager.Instance.Show("info");
@@ -113,13 +87,4 @@ namespace ArtboxGames
             }
         }
     }
-}
-
-public enum LoginType
-{
-    None,
-    Facebook,
-    Google,
-    Apple,
-    Guest
 }

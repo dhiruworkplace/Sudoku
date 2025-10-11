@@ -29,8 +29,6 @@ namespace ArtboxGames
 			{
 				SoundManager.Instance.Play(soundId);
 			}
-			if (!name.Equals("Bkg") && !name.Equals("Close"))
-				AdsManager.Instance.ShowFullScreen();
 		}
 		#endregion
 	}

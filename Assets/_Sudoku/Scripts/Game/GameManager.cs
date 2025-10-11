@@ -1,4 +1,4 @@
-﻿using Facebook.Unity;
+﻿//using Facebook.Unity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -556,26 +556,6 @@ namespace ArtboxGames
                     cell.SetHighlighted();
                 }
             }
-        }
-
-        public void Logout()
-        {
-            if (SocialLogin.Instance.Login_Type == LoginType.Facebook)
-            {
-                FB.LogOut();
-            }
-            else if (SocialLogin.Instance.Login_Type == LoginType.Google)
-            {
-                SocialLogin.Instance.OnSignOut();
-            }
-            else if (SocialLogin.Instance.Login_Type == LoginType.Apple)
-            {
-                //AppleLogin.Instance.OnLogout();
-            }
-            SocialLogin.Instance.Login_Type = LoginType.None;
-            SocialLogin.Name = "Guest";
-            SceneManager.LoadScene("Login");
-            SocialLogin.imagePath = "";
         }
 
         // used to select player(2 or four player)

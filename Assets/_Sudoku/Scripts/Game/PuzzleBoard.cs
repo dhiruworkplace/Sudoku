@@ -854,7 +854,7 @@ namespace ArtboxGames
 		[UnityEditor.MenuItem("Tools/Bizzy Bee Games/Complete Active Puzzle", priority = 200)]
 		public static void CompleteActivePuzzle()
 		{
-			PuzzleBoard puzzleBoard = FindObjectOfType<PuzzleBoard>();
+			PuzzleBoard puzzleBoard = FindAnyObjectByType<PuzzleBoard>();
 			PuzzleData puzzleData = GameManager.Instance.ActivePuzzleData;
 
 			for (int r = 0; r < puzzleData.boardSize; r++)

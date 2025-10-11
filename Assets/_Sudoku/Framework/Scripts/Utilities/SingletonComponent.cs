@@ -24,7 +24,7 @@ namespace ArtboxGames
 				// If the instance is null then either Instance was called to early or this object is not active.
 				if (instance == null)
 				{
-					instance = GameObject.FindObjectOfType<T>();
+					instance = FindAnyObjectByType<T>();
 
 					(instance as SingletonComponent<T>).Initialize();
 				}

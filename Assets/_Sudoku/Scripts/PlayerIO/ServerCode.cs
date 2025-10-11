@@ -161,7 +161,7 @@ namespace ArtboxGames
             if (player == null)
             {
                 GameManager.Instance.ShowMessage("Unable to connect with server, please try again");
-                Authentication(SystemInfo.deviceUniqueIdentifier, "", SocialLogin.Instance.Login_Type);
+                Authentication(SystemInfo.deviceUniqueIdentifier, "");
                 return;
             }
             player.Multiplayer.CreateJoinRoom(
@@ -203,7 +203,7 @@ namespace ArtboxGames
             if (player == null)
             {
                 GameManager.Instance.ShowMessage("Unable to connect with server, please try again");
-                Authentication(SystemInfo.deviceUniqueIdentifier, "", SocialLogin.Instance.Login_Type);
+                Authentication(SystemInfo.deviceUniqueIdentifier, "");
                 return;
             }
             player.Multiplayer.JoinRoom(
@@ -271,7 +271,7 @@ namespace ArtboxGames
             else
             {
                 GameManager.Instance.ShowMessage("Unable to connect with server, please try again");
-                Authentication(SystemInfo.deviceUniqueIdentifier, "", SocialLogin.Instance.Login_Type);
+                Authentication(SystemInfo.deviceUniqueIdentifier, "");
             }
         }
 
@@ -334,7 +334,7 @@ namespace ArtboxGames
             }
         }
 
-        public void CreateNewUser(string name, string email, LoginType loginType)
+        public void CreateNewUser(string name, string email)
         {
             PlayerIO.Authenticate(
                 GameID,                                 //Your game id
@@ -344,8 +344,8 @@ namespace ArtboxGames
                 {"username", name},                 //Username - required
                 {"password", password },             //Password - required
                 { "email", email },
-                { "gender", loginType.ToString() },
-                { "birthdate", loginType.ToString() }
+                { "gender", "other" },
+                { "birthdate", System.DateTime.Now.ToShortDateString() }
                 },
                 null,                                   //PlayerInsight segments
                 delegate (Client client)
@@ -365,7 +365,7 @@ namespace ArtboxGames
             );
         }
 
-        public void Authentication(string deviceID, string email, LoginType loginType, string accessToken = null)
+        public void Authentication(string deviceID, string email, string accessToken = null)
         {
             var _email = string.IsNullOrEmpty(email) ? deviceID + "@gmail.com" : email;
             email = _email;
@@ -397,7 +397,7 @@ namespace ArtboxGames
                         }
                         if (error.Message.StartsWith("UnknownUser"))
                         {
-                            CreateNewUser(deviceID, email, loginType);
+                            CreateNewUser(deviceID, email);
                         }
                     }
                 );

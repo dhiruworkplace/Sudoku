@@ -14,7 +14,7 @@ namespace ArtboxGames
 		[SerializeField] private RectTransform	handle				= null;
 		[SerializeField] private RectTransform	handleSlideArea		= null;
 		[SerializeField] private float			handleAnimSpeed		= 0f;
-		[SerializeField] private bool			handleFollowsMouse	= false;
+		//[SerializeField] private bool			handleFollowsMouse	= false;
 
 		[Space]
 
